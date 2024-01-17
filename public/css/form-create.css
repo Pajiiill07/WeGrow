@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
+.form{
+    font-family: Inter;
+}
+
+.form h3{
+    padding-top: 10px;
+    color: #654B4B;
+    margin-left: 100px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form div label {
+    color: #654B4B;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.form div input {
+    width: 400px;
+    height: 40px;
+    background: #FBF3EA;
+    border-radius: 15px;
+    border: none;
+}
+
+.form button{
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    background: #DFB787;
+    flex-shrink: 0;
+    border: none;
+    padding: 0;
+    margin-left: 280px;
+    margin-top: 30px;
+}
+
+.form button span{
+    color: #654B4B;
+    font-size: 120%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    word-wrap: break-word;
+}

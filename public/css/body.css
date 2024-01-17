@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #0000;
+    background-image: url('/images/bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+    .main-text{
+        margin-top: 7%;
+        font-size: 30px;
+        padding-left: 100px;
+        padding-right: 200px;
+    }
+    .main-text h1{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .main-text p{
+        margin-top: 20px;
+        width: auto;
+        color: #000;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 35px;
+    }
+    .main-text button {
+        background-color: #000;
+        border-radius: 20px;
+        margin-top: 10px;
+        width: 250px;
+        height: 60px;
+        flex-shrink: 0;
+        border: none;
+    }
+    .main-text button span {
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+    }
+

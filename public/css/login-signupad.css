@@ -1,0 +1,104 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    background-image: url('/images/login_ad.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#adm{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10%;
+}
+
+.login{
+    background-color: white;
+    border-radius: 45px;
+    width: 40%;
+    height: 70%;    
+    position: fixed;
+}
+
+.login h1{
+    text-align: center;
+    color: black; 
+    font-size: 280%; 
+    font-weight: 700; 
+    word-wrap: break-word;
+    margin-top: 10%;
+}
+
+.un{
+    width: 60%;
+    height: 10%;
+    background: #FBF3EA; 
+    border-radius: 22px;
+    border: none;
+    font-size: 110%;
+    padding: 20px;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.pass{
+    width: 60%;
+    height: 10%;
+    background: #FBF3EA; 
+    border-radius: 22px;
+    border: none;
+    font-size: 110%;
+    padding: 20px;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+.login button{
+    width: 25%;
+    height: 8%;
+    background: #DFB787; 
+    border-radius: 15px;
+    border: none;
+    font-size: 120%;
+    margin-top: 10%;
+    margin-left: 37%;
+}
+
+.login h5{
+    color: #B2B2B2; 
+    font-size: 150%; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login h5 a{
+    color: #654B4B;
+}
+
+/*Register*/
+
+.ot{
+    width: 60%;
+    height: 10%;
+    background: #FBF3EA; 
+    border-radius: 22px;
+    border: none;
+    font-size: 110%;
+    padding: 20px;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+.pw{
+    width: 60%;
+    height: 10%;
+    background: #FBF3EA; 
+    border-radius: 22px;
+    border: none;
+    font-size: 110%;
+    padding: 20px;
+    margin-left: 20%;
+    margin-top: 3%;
+}

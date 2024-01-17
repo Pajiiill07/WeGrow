@@ -1,0 +1,376 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    width: 100%;
+}
+
+/* Sidebar Styling - Bagian Biasa */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    background: #FBF3EA;
+    width: 100px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+}
+
+/* Sidebar Image Styling - Bagian Biasa */
+.sidebar .image {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+.sidebar .image img {
+    text-align: center;
+    display: flex;
+    width: auto;
+    height: 60px;
+    transition: all 0.5s ease;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+/* Sidebar Heading Styling - Bagian Biasa */
+.sidebar h3 {
+    color: #654B4B;
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center;
+    flex-grow: 0;
+    margin-top: 10px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+/* Sidebar List Styling - Bagian Biasa */
+.sidebar ul {
+    flex-grow: 1;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    transition: margin-top 0.5s ease;
+}
+
+.sidebar ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    line-height: 1;
+    transition: all 0.5s ease;
+}
+
+/* Sidebar Menu Item Styling - Bagian Biasa */
+.sidebar ul li .sidemenu {
+    opacity: 0;
+    font-size: 0px;
+    transition: opacity 0.5s ease;
+}
+
+/* Hover Effect on Sidebar Menu Items - Bagian Biasa */
+.sidebar:hover .sidemenu {
+    opacity: 1;
+    font-size: 15px;
+}
+
+/* Sidebar Link Styling - Bagian Biasa */
+.sidebar ul li a {
+    position: relative;
+    color: #654B4B;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 29.80px;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Sidebar Icon Styling - Bagian Biasa */
+.sidebar ul li a img {
+    margin-right: 5px;
+    width: 20px;
+}
+
+/* Sidebar Text Styling - Bagian Biasa */
+.sidebar ul li a span {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+/* Sidebar Button Styling - Bagian Biasa */
+.sidebar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #DFB787;
+    width: 80%;
+    height: 50px;
+    flex-shrink: 0;
+    border: none;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%;
+}
+
+/* Sidebar Button Text Styling - Bagian Biasa */
+.sidebar button span {
+    color: #654B4B;
+    font-size: 120%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+/* Sidebar Hover Styling - Bagian Hover */
+.sidebar:hover {
+    width: 200px;
+    height: 100vh;
+    transition: all 0.5s ease;
+}
+
+/* Sidebar Hover Effect on Menu Items - Bagian Hover */
+.sidebar:hover ul {
+    margin-top: 20px;
+    transition: margin-top 0.5s ease;
+}
+
+.sidebar:hover ul li {
+    transition: all 0.5s ease;
+}
+
+.sidebar:hover ul li a{
+    margin-top: 0;
+    transition: all 0.5s ease;
+    margin-left: 20%;
+}
+
+.sidebar:hover .sidemenu {
+    font-size: 15px;
+}
+
+/* Sidebar Hover Button Styling - Bagian Hover */
+.sidebar:hover button {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Sidebar Hover Button Text Styling - Bagian Hover */
+.sidebar:hover button span {
+    font-size: 120%;
+}
+
+.sidebar:hover .image img {
+    width: 80%;
+    height: auto;
+    transition: all 0.5s ease;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Clear Float */
+.clear {
+    clear: both;
+}
+
+/* Content Styling */
+.content {
+    width: calc(100% - 100px);
+    float: right;
+    padding: 15px;
+}
+
+.buttonadd{
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    background: #DFB787;
+    flex-shrink: 0;
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 91%;
+}
+
+.buttonadd span{
+    color: #654B4B;
+    font-size: 120%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+/* Content Heading Styling */
+.content h1 {
+    font-family: 'Inter', sans-serif;
+}
+
+.sidebar:hover + .content {
+    width: calc(100% - 200px);
+    transition: width 0.5s ease;
+}
+
+/* Table Styling */
+table {
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Table Header Styling */
+th {
+    background-color: #654B4B;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    padding: 1%;
+    width: auto;
+}
+
+/* Table Column Styling */
+.no {
+    width: 100px;
+    border-radius: 10px 0px 0px 0px;
+}
+
+
+/* Table Data Styling */
+td {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4ece2;
+    padding: 1%;
+    width: auto;
+}
+
+/* Button in Table Cell Styling */
+td button {
+    width: 60px;
+    height: 30px;
+    border-radius: 9px;
+    border: none;
+}
+
+/* Button Text in Table Cell Styling */
+td button span {
+    color: #f4ece2;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Edit Button Styling */
+.edit {
+    background-color: #246acdb5;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.edit a{
+    text-decoration: none;
+    color: #f4ece2;
+}
+
+/* Delete Button Styling */
+.delete {
+    background-color: rgb(234, 62, 62);
+    margin-left: 10px;
+}
+
+
+/* Style Create */
+
+h1{
+    font-family: Inter;
+    padding: 2px;
+}
+.form{
+    font-family: Inter;
+}
+
+.form h3{
+    padding-top: 10px;
+    color: #654B4B;
+    margin-left: 100px;
+    font-family: Poppins;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form div label {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #654B4B;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.form div input, select {
+    width: 400px;
+    height: 40px;
+    background: #FBF3EA;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.form div img {
+    width: 400px;
+    height: 100px;
+    background: #FBF3EA;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.form button{
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    background: #DFB787;
+    flex-shrink: 0;
+    border: none;
+    padding: 0;
+    margin-left: 280px;
+    margin-top: 30px;
+}
+
+.form button span{
+    color: #654B4B;
+    font-size: 120%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    word-wrap: break-word;
+}

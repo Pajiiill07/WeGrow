@@ -1,0 +1,51 @@
+#Reservasi{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    background-image: url('/images/bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 45px;
+    text-align: center;
+}
+
+#item{
+    display: flex;
+    justify-content: center;
+}
+    .reserve-item{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .reserve-item{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        list-style: none;
+        padding: 0%;
+        margin: 0;
+        gap: 10px;
+    }
+    .reserve-item li{
+        width: 355px;
+        height: 244px;
+        border: 1 solid #000;
+        margin: 10px;
+        float: left;
+        transition: 0.5s;
+    }
+    .reserve-item li a{
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .reserve-item li:hover{
+        transform: scale(1.1);
+    }
